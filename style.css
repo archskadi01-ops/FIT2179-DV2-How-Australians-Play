@@ -156,3 +156,45 @@ body {
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 80%;
+    }
+
+    .content-section {
+        padding: 80px 8%;
+    }
+
+    .text-block h2 {
+        font-size: 2rem;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-box {
+        overflow-x: auto;
+    }
+}

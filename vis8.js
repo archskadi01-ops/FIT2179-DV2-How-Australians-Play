@@ -24,14 +24,14 @@ const chart8 = {
             "from": {
                 "data": {
                     "values": [
-                        {"state": "New South Wales", "score": 69},
-                        {"state": "Victoria", "score": 72},
-                        {"state": "Queensland", "score": 67},
-                        {"state": "Western Australia", "score": 66},
-                        {"state": "South Australia", "score": 65},
-                        {"state": "Tasmania", "score": 64},
-                        {"state": "Northern Territory", "score": 66},
-                        {"state": "Australian Capital Territory", "score": 78}
+                        {"state": "Australian Capital Territory", "score": 79.5},
+                        {"state": "Victoria", "score": 74.1},
+                        {"state": "New South Wales", "score": 74.0},
+                        {"state": "Western Australia", "score": 73.9},
+                        {"state": "Queensland", "score": 72.9},
+                        {"state": "Northern Territory", "score": 72.5},
+                        {"state": "South Australia", "score": 71.3},
+                        {"state": "Tasmania", "score": 69.4}
                     ]
                 },
                 "key": "state",

@@ -17,11 +17,15 @@ body {
 
     text-align: center;
 
-    background: linear-gradient(
-        135deg,
-        #121212,
-        #1f1f1f
-    );
+    background-image:
+        linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content h1 {

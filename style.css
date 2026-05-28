@@ -156,10 +156,11 @@ body {
     font-size: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 
     html, body {
         width: 100% !important;
+        max-width: 100% !important;
         overflow-x: hidden !important;
     }
 
@@ -167,8 +168,7 @@ body {
         height: auto !important;
         min-height: auto !important;
         flex-direction: column !important;
-        padding: 120px 20px 60px 20px !important;
-        box-sizing: border-box !important;
+        padding: 100px 24px 60px 24px !important;
     }
 
     .hero-content h1 {
@@ -181,14 +181,8 @@ body {
         align-items: center !important;
     }
 
-    .stat-card {
-        width: 80% !important;
-        max-width: 280px !important;
-    }
-
     .content-section {
         padding: 70px 24px !important;
-        overflow-x: hidden !important;
     }
 
     .text-block {
@@ -197,23 +191,33 @@ body {
 
     .text-block h2 {
         font-size: 1.8rem !important;
+        line-height: 1.25 !important;
     }
 
     .chart-grid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 30px !important;
+        width: 100% !important;
     }
 
     .chart-box {
         width: 100% !important;
         max-width: 100% !important;
-        overflow-x: auto !important;
-        padding: 15px !important;
+        min-height: auto !important;
+        display: block !important;
         box-sizing: border-box !important;
+        overflow-x: auto !important;
     }
 
     .vega-embed {
-        min-width: 520px !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-x: auto !important;
+    }
+
+    .vega-embed svg {
+        max-width: 100% !important;
+        height: auto !important;
     }
 }

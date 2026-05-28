@@ -13,7 +13,8 @@ const chart8 = {
     "data": {
         "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
         "format": {
-            "type": "geojson"
+            "type": "json",
+            "property": "features"
         }
     },
 

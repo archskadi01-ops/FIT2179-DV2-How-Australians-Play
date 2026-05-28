@@ -1,4 +1,4 @@
-const chart9 = {
+const chart8 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "width": 350,
@@ -6,66 +6,48 @@ const chart9 = {
 
     "data": {
         "values": [
-            {"state": "ACT", "score": 79.5},
-            {"state": "VIC", "score": 74.1},
-            {"state": "NSW", "score": 74.0},
-            {"state": "WA", "score": 73.9},
-            {"state": "QLD", "score": 72.9},
-            {"state": "NT", "score": 72.5},
-            {"state": "SA", "score": 71.3},
-            {"state": "TAS", "score": 69.4}
+            {"region":"Metro", "players":88},
+            {"region":"Regional", "players":76},
+            {"region":"Remote", "players":61}
         ]
     },
 
     "mark": {
-        "type": "bar",
-        "cornerRadiusTopRight": 8,
-        "cornerRadiusBottomRight": 8
+        "type":"arc",
+        "innerRadius":50
     },
 
     "encoding": {
-        "y": {
-            "field": "state",
-            "type": "nominal",
-            "sort": "-x",
-            "axis": {
-                "labelColor": "white",
-                "title": null
-            }
-        },
-
-        "x": {
-            "field": "score",
-            "type": "quantitative",
-            "axis": {
-                "labelColor": "white",
-                "title": "Digital Inclusion Score",
-                "titleColor": "white"
-            }
+        "theta": {
+            "field":"players",
+            "type":"quantitative"
         },
 
         "color": {
-            "field": "score",
-            "type": "quantitative",
+            "field":"region",
+            "type":"nominal",
+
             "scale": {
-                "range": ["#444444", "#ffb000"]
+                "range": ["#ffb000", "#888888", "#444444"]
             },
-            "legend": null
+
+            "legend": {
+                "labelColor":"white",
+                "titleColor":"white"
+            }
         },
 
-        "tooltip": [
-            {"field": "state", "type": "nominal", "title": "State / Territory"},
-            {"field": "score", "type": "quantitative", "title": "Digital Inclusion Score"}
+        "tooltip":[
+            {"field":"region","type":"nominal"},
+            {"field":"players","type":"quantitative"}
         ]
     },
 
     "config": {
-        "background": "transparent",
-        "view": {
-            "stroke": "transparent"
-        },
-        "axis": {
-            "gridColor": "#333"
+        "background":"transparent",
+
+        "view":{
+            "stroke":"transparent"
         }
     }
 };

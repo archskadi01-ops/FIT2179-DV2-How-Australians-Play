@@ -1,4 +1,4 @@
-const mapSpec = {
+const chart8 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "width": 450,
@@ -72,5 +72,3 @@ const mapSpec = {
         }
     }
 };
-
-vegaEmbed("#vis10", mapSpec);

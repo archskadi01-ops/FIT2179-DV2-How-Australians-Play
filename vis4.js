@@ -1,8 +1,8 @@
 const chart4 = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "width": 350,
-    "height": 260,
+    "width": 420,
+    "height": 300,
 
     "data": {
         "values": [

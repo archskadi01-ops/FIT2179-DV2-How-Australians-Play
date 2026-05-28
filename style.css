@@ -29,6 +29,11 @@ body {
     background-position: center;
 }
 
+.hero-content {
+    max-width: 900px;
+    text-align: center;
+}
+
 .hero-content h1 {
     font-size: 5rem;
 
@@ -45,6 +50,7 @@ body {
     line-height: 1.6;
 
     color: #dddddd;
+    
 }
 
 .stats-container {

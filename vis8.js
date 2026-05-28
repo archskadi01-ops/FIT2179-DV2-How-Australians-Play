@@ -9,78 +9,79 @@ const chart8 = {
     },
 
     "data": {
-        "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/australia.json",
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
         "format": {
-            "type": "topojson",
-            "feature": "states"
+            "type": "geojson"
         }
     },
 
     "transform": [
         {
             "lookup": "properties.STATE_NAME",
+
             "from": {
                 "data": {
                     "values": [
-                        {"state": "New South Wales", "score": 74.0},
-                        {"state": "Victoria", "score": 74.1},
-                        {"state": "Queensland", "score": 72.9},
-                        {"state": "Western Australia", "score": 73.9},
-                        {"state": "South Australia", "score": 71.3},
-                        {"state": "Tasmania", "score": 69.4},
-                        {"state": "Northern Territory", "score": 72.5},
-                        {"state": "Australian Capital Territory", "score": 79.5}
+                        {"state":"New South Wales","score":74},
+                        {"state":"Victoria","score":74},
+                        {"state":"Queensland","score":73},
+                        {"state":"Western Australia","score":73},
+                        {"state":"South Australia","score":71},
+                        {"state":"Tasmania","score":69},
+                        {"state":"Northern Territory","score":68},
+                        {"state":"Australian Capital Territory","score":79}
                     ]
                 },
 
-                "key": "state",
-                "fields": ["score"]
+                "key":"state",
+                "fields":["score"]
             }
         }
     ],
 
     "mark": {
-        "type": "geoshape",
-        "stroke": "#222",
-        "strokeWidth": 1.5
+        "type":"geoshape",
+        "stroke":"#111",
+        "strokeWidth":1.5
     },
 
     "encoding": {
+
         "color": {
-            "field": "score",
-            "type": "quantitative",
+            "field":"score",
+            "type":"quantitative",
 
             "scale": {
-                "scheme": "goldgreen"
+                "scheme":"goldgreen"
             },
 
             "legend": {
-                "title": "Digital Inclusion",
-                "labelColor": "white",
-                "titleColor": "white"
+                "title":"Digital Inclusion",
+                "labelColor":"white",
+                "titleColor":"white"
             }
         },
 
-        "tooltip": [
+        "tooltip":[
             {
-                "field": "properties.STATE_NAME",
-                "type": "nominal",
-                "title": "State"
+                "field":"properties.STATE_NAME",
+                "title":"State"
             },
 
             {
-                "field": "score",
-                "type": "quantitative",
-                "title": "Digital Inclusion Score"
+                "field":"score",
+                "title":"Score"
             }
         ]
     },
 
     "config": {
-        "background": "transparent",
+        "background":"transparent",
 
-        "view": {
-            "stroke": "transparent"
+        "view":{
+            "stroke":"transparent"
         }
     }
 };
+
+vegaEmbed("#chart8", chart8, {actions:false});

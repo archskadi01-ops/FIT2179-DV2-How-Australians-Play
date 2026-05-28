@@ -6,8 +6,8 @@ const chart2 = {
 
     "data": {
         "values": [
-            {"type": "Play with others", "value": 77},
-            {"type": "Play alone only", "value": 23}
+            {"type": "Play alone only", "value": 23},
+            {"type": "Play with others", "value": 77}
         ]
     },
 
@@ -25,7 +25,7 @@ const chart2 = {
             "field": "type",
             "type": "nominal",
             "scale": {
-                "range": ["#ffb000", "#444444"]
+                "range": ["#444444", "#ffb000"]
             },
             "legend": {
                 "labelColor": "white",

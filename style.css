@@ -158,6 +158,21 @@ body {
 
 @media (max-width: 768px) {
 
+    .hero {
+        padding-top: 140px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        padding: 0 20px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        padding: 0 20px;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
         line-height: 1.2;

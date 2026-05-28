@@ -159,53 +159,51 @@ body {
 @media (max-width: 768px) {
 
     .hero {
-        padding-top: 140px;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-        line-height: 1.1;
-        padding: 0 20px;
-    }
-
-    .hero-content p {
-        font-size: 0.95rem;
-        padding: 0 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .text-block h2 {
-        font-size: 1.7rem;
-        line-height: 1.25;
-    }
-
-    .chart-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .chart-box {
         width: 100%;
-        max-width: 100%;
-        padding: 15px;
-        overflow-x: scroll;
+        min-height: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 120px 20px 60px 20px;
         box-sizing: border-box;
     }
 
-    .vega-embed {
-        min-width: 520px;
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
 
-    #chart1 .vega-embed {
-        min-width: 520px;
+    .hero-content h1 {
+        font-size: 1.7rem;
+        line-height: 1.15;
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    .stats-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
     }
 
     .stat-card {
         width: 80%;
-        max-width: 260px;
+        max-width: 280px;
+        padding: 25px;
     }
 }

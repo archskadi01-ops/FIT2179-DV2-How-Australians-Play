@@ -6,8 +6,8 @@ const chart2 = {
 
     "data": {
         "values": [
-            {"type": "Play alone only", "value": 23},
-            {"type": "Play with others", "value": 77}
+            {"type": "Play with others", "value": 77},
+            {"type": "Play alone only", "value": 23}
         ]
     },
 

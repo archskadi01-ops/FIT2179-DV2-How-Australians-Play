@@ -180,3 +180,23 @@ body {
 
     color: #dddddd;
 }
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    margin-top: 50px;
+}
+
+.chart-box {
+    background-color: rgba(255,255,255,0.04);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}

@@ -32,7 +32,8 @@ const chart1 = {
             "type":"quantitative",
             "axis":{
                 "labelColor":"white",
-                "title":"Percentage"
+                "title":"Percentage",
+                "titleColor":"white"
             }
         },
 

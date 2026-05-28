@@ -84,3 +84,35 @@ body {
 
     line-height: 1.5;
 }
+
+.content-section {
+    padding: 120px 15%;
+
+    background-color: #181818;
+}
+
+.dark-section {
+    background-color: #101010;
+}
+
+.text-block {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.text-block h2 {
+    font-size: 3rem;
+
+    color: #ffb000;
+
+    margin-bottom: 30px;
+}
+
+.text-block p {
+    font-size: 1.2rem;
+
+    line-height: 2;
+
+    color: #dddddd;
+}

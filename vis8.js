@@ -5,7 +5,9 @@ const chart8 = {
     "height": 350,
 
     "projection": {
-        "type": "mercator"
+        "type": "mercator",
+        "center": [134, -25],
+        "scale": 550
     },
 
     "data": {
@@ -45,12 +47,7 @@ const chart8 = {
 
     "encoding": {
         "color": {
-            "field": "score",
-            "type": "quantitative",
-            "scale": {
-                "scheme": "yellowgreen"
-            },
-            "title": "Digital Inclusion"
+            "value": "#ffb000"
         },
 
         "tooltip": [

@@ -24,14 +24,14 @@ const chart8 = {
             "from": {
                 "data": {
                     "values": [
-                        {"state":"New South Wales","score":69},
-                        {"state":"Victoria","score":72},
-                        {"state":"Queensland","score":67},
-                        {"state":"Western Australia","score":66},
-                        {"state":"South Australia","score":65},
-                        {"state":"Tasmania","score":64},
-                        {"state":"Northern Territory","score":66},
-                        {"state":"Australian Capital Territory","score":78}
+                        {"state": "New South Wales", "score": 69},
+                        {"state": "Victoria", "score": 72},
+                        {"state": "Queensland", "score": 67},
+                        {"state": "Western Australia", "score": 66},
+                        {"state": "South Australia", "score": 65},
+                        {"state": "Tasmania", "score": 64},
+                        {"state": "Northern Territory", "score": 66},
+                        {"state": "Australian Capital Territory", "score": 78}
                     ]
                 },
                 "key": "state",
@@ -48,17 +48,28 @@ const chart8 = {
 
     "encoding": {
         "color": {
-            "value": "#ffb000"
+            "field": "score",
+            "type": "quantitative",
+            "scale": {
+                "scheme": "yellowgreen"
+            },
+            "legend": {
+                "title": "Digital Inclusion",
+                "labelColor": "white",
+                "titleColor": "white"
+            }
         },
 
         "tooltip": [
             {
                 "field": "properties.STATE_NAME",
+                "type": "nominal",
                 "title": "State"
             },
             {
                 "field": "score",
-                "title": "Score"
+                "type": "quantitative",
+                "title": "Digital Inclusion Score"
             }
         ]
     },
